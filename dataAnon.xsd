@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="configuration">
+<xs:complexType>
+  <xs:sequence>
+  <xs:element name="users">
+  <xs:complexType>
+  <xs:sequence>
+    <xs:element name="dbnamesrc" type="xs:string"/>
+    <xs:element name="usersrc" type="xs:string"/>
+    <xs:element name="passwrdsrc" type="xs:string"/>
+    <xs:element name="portsrc" type="xs:string"/>
+    <xs:element name="urlsrc" type="xs:string"/>
+    <xs:element name="dbnamedest" type="xs:string"/>
+    <xs:element name="userdest" type="xs:string"/>
+    <xs:element name="passwrddest" type="xs:string"/>
+    <xs:element name="portdest" type="xs:string"/>
+    <xs:element name="urldest" type="xs:string"/>
+  </xs:sequence>
+</xs:complexType>
+</xs:element>
+  <xs:element name="table" maxOccurs="unbounded">
+    <xs:complexType>
+        <xs:sequence>
+        <xs:element name="tablename" type="xs:string"/>
+        <xs:element name="column" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>

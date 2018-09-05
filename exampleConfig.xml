@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="C:\Users\rbyrne\dataAnon\DataAnon\dataAnon.xsd">
+
+<users>
+  <dbnamesrc>dataanon1</dbnamesrc>
+  <usersrc>root</usersrc>
+  <passwrdsrc></passwrdsrc>
+  <portsrc>3306</portsrc>
+  <urlsrc>127.0.0.1</urlsrc>
+
+  <dbnamedest>dataanon2</dbnamedest>
+  <userdest>root</userdest>
+  <passwrddest></passwrddest>
+  <portdest>3306</portdest>
+  <urldest>127.0.0.1</urldest>
+</users>
+
+  <table>
+    <tablename>patient</tablename>
+    <column>name</column>
+    <column>ssn</column>
+  </table>
+
+  <table>
+    <tablename>hospital</tablename>
+    <column>address</column>
+  </table>
+
+</configuration>
